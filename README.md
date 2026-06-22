@@ -2,7 +2,6 @@
 
 A Java-based **Object-Oriented Programming (OOP) console application** that simulates a hospital management system. The system models real-world hospital operations such as patient registration, doctor–nurse coordination, and appointment-related interactions using core OOP principles.
 
-```
 ## 📌 Project Overview
 
 This project demonstrates a structured OOP design using Java SE (Tier 1 Console Application). It focuses on clean architecture, class relationships, and real-world modeling of a hospital environment.
