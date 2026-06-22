@@ -37,27 +37,23 @@ It applies all four OOP pillars:
 
 ## 🧱 Project Structure
 HospitalSystem/
-│
 ├── README.md
 ├── build.xml
 │
 ├── docs/
-│ └── HospitalSystem_ProjectDocumentation.pdf
+│   └── HospitalSystem_ProjectDocumentation.pdf
 │
 ├── src/
-│ └── hospitalsystem/
-│ ├── Person.java
-│ ├── Doctor.java
-│ ├── Nurse.java
-│ ├── Patient.java
-│ ├── Hospital.java
-│ ├── Daily.java
-│ └── HospitalSystem.java
+│   └── hospitalsystem/
+│       ├── Person.java
+│       ├── Doctor.java
+│       ├── Nurse.java
+│       ├── Patient.java
+│       ├── Hospital.java
+│       └── HospitalSystem.java
 │
 └── dist/
-└── HospitalSystem.jar
-
-
+    └── HospitalSystem.jar
 ---
 
 ## 🧠 OOP Concepts Used
