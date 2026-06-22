@@ -33,7 +33,6 @@ It applies all four OOP pillars:
 - 🔗 Aggregation and association between classes
 
 ---
-```
 ## 🧱 Project Structure
 HospitalSystem/
 ├── README.md
@@ -53,7 +52,6 @@ HospitalSystem/
 │
 └── dist/
     └── HospitalSystem.jar
-```
 ```
 ## 🧠 OOP Concepts Used
 
