@@ -1,3 +1,6 @@
+Hospital  patient and clinic Appointment Scheduler
+<img width="405" height="313" alt="image" src="https://github.com/user-attachments/assets/8eeccec0-14e6-4ecd-8042-5bb242fef099" />
+
 ##  Project Structure
 
 HospitalSystem/ 
