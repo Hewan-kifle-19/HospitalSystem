@@ -35,9 +35,6 @@ This application demonstrates structured OOP design using **Java SE (Tier 1 Cons
 
 ---
 
-
----
-
 ## 🧠 OOP Concepts in Detail
 
 ### 1. Encapsulation
@@ -105,3 +102,4 @@ ant run      # Execute the application
 | HayleMariyam Agergzat | Backend Developer |
 | Hewan Kifle | QA Tester & Documentation |
 | Beka Assefa | Version Control & Integration Manager |
+```
