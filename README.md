@@ -1,121 +1,107 @@
 # 🏥 Hospital Patient & Clinic Appointment Scheduler
 
-A Java-based **Object-Oriented Programming (OOP) console application** that simulates a hospital management system. The system models real-world hospital operations such as patient registration, doctor–nurse coordination, and appointment-related interactions using core OOP principles.
+A Java-based **Object-Oriented Programming (OOP)** console application that simulates a real-world hospital management system. This project models core hospital operations including patient registration, doctor–nurse coordination, and appointment management using fundamental OOP principles.
+
+---
 
 ## 📌 Project Overview
 
-This project demonstrates a structured OOP design using Java SE (Tier 1 Console Application). It focuses on clean architecture, class relationships, and real-world modeling of a hospital environment.
+This application demonstrates structured OOP design using **Java SE (Tier 1 Console Application)**. It emphasizes clean architecture, well-defined class relationships, and realistic modeling of a hospital ecosystem.
 
-The system includes:
-- Patients
-- Doctors
-- Nurses
-- Hospital (central system)
+### Key Entities:
+- 👤 **Patients** – Register and interact with doctors
+- 👨‍⚕️ **Doctors** – Specialized medical professionals with unique IDs
+- 👩‍⚕️ **Nurses** – Assigned to doctors for coordinated care
+- 🏥 **Hospital** – Central system managing all operations
 
-It applies all four OOP pillars:
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
+### OOP Principles Applied:
+- ✅ **Encapsulation** – Data hiding with controlled access
+- ✅ **Inheritance** – Hierarchical class structures
+- ✅ **Polymorphism** – Runtime and compile-time flexibility
+- ✅ **Abstraction** – Abstract classes and interface implementation
 
 ---
 
 ## 🎯 Features
 
-- 👨‍⚕️ Doctor management with specialization and ID
-- 👩‍⚕️ Nurse assignment and coordination under doctors
-- 🧑 Patient registration and doctor interaction
-- 🏥 Hospital system using composition (HAS-A relationship)
-- 🔁 Runtime polymorphism using overridden methods
-- 🍽️ Interface-based behavior using `Daily` (eat/sleep contract)
-- 📋 Console-based simulation of hospital workflows
-- 🔗 Aggregation and association between classes
+- 👨‍⚕️ **Doctor Management** – Specialization tracking and unique identification
+- 👩‍⚕️ **Nurse Coordination** – Assignment and management under doctors
+- 🧑 **Patient Registration** – Seamless patient onboarding and doctor linkage
+- 🏥 **Hospital Composition** – HAS-A relationships for robust system architecture
+- 🔁 **Runtime Polymorphism** – Overridden methods for dynamic behavior
+- 🍽️ **Interface Implementation** – `Daily` contract enforcing `eat()` and `sleep()` methods
+- 📋 **Console Simulation** – Interactive workflow demonstration
+- 🔗 **Association & Aggregation** – Realistic entity relationships
 
 ---
-## 🧱 Project Structure
-HospitalSystem/
-├── README.md
-├── build.xml
-│
-├── docs/
-│   └── HospitalSystem_ProjectDocumentation.pdf
-│
-├── src/
-│   └── hospitalsystem/
-│       ├── Person.java
-│       ├── Doctor.java
-│       ├── Nurse.java
-│       ├── Patient.java
-│       ├── Hospital.java
-│       └── HospitalSystem.java
-│
-└── dist/
-    └── HospitalSystem.jar
-```
-## 🧠 OOP Concepts Used
+
+
+---
+
+## 🧠 OOP Concepts in Detail
 
 ### 1. Encapsulation
-All sensitive fields (e.g., IDs, personal data) are private and accessed via getters/setters.
+All sensitive fields (IDs, personal information) are declared `private` and accessed through getters/setters, ensuring data integrity and controlled modification.
 
 ### 2. Inheritance
-`Doctor`, `Nurse`, and `Patient` inherit from the abstract class `Person`.
+- `Doctor`, `Nurse`, and `Patient` inherit from the abstract class `Person`
+- Promotes code reuse and establishes clear hierarchical relationships
 
 ### 3. Polymorphism
-- Runtime polymorphism via method overriding (`vision()` method)
-- Compile-time polymorphism via method overloading (`eat()` methods in Doctor class)
+- **Runtime Polymorphism** – Method overriding (`vision()` method)
+- **Compile-time Polymorphism** – Method overloading (`eat()` methods in Doctor class)
 
 ### 4. Abstraction
-- `Person` is an abstract class
-- `Daily` is an interface enforcing `eat()` and `sleep()` behavior
+- `Person` is an abstract class defining common attributes and behaviors
+- `Daily` interface enforces `eat()` and `sleep()` implementation across classes
 
 ---
 
 ## 🔗 Class Relationships
 
-- **IS-A Relationship:**  
-  Doctor, Nurse, Patient → Person
-
-- **HAS-A Relationship (Composition):**  
-  Hospital → Doctor, Nurse
-
-- **Aggregation:**  
-  Doctor → List of Nurses
-
-- **Association:**  
-  Doctor ↔ Patient interaction
+| Relationship | Implementation |
+|--------------|----------------|
+| **IS-A** | Doctor, Nurse, Patient → Person (Inheritance) |
+| **HAS-A** | Hospital → Doctor, Nurse (Composition) |
+| **Aggregation** | Doctor → List of Nurses (Collection) |
+| **Association** | Doctor ↔ Patient (Bidirectional interaction) |
 
 ---
 
 ## ⚙️ Technologies Used
 
-- Java SE (JDK 8+)
-- NetBeans IDE 8.2
-- Apache Ant (build system)
-- JVM (runtime environment)
-- Git & GitHub (version control)
+- **Java SE** (JDK 8+)
+- **NetBeans IDE** 8.2
+- **Apache Ant** – Build automation
+- **JVM** – Runtime environment
+- **Git & GitHub** – Version control
 
 ---
 
 ## 🚀 How to Run the Project
 
-### Option 1: Using IDE (NetBeans)
+### Option 1: Using NetBeans IDE
 1. Open NetBeans IDE
 2. Import the project folder
-3. Run `HospitalSystem.java`
+3. Navigate to `HospitalSystem.java`
+4. Run the file (Right-click → Run File)
 
-### Option 2: Using Terminal
+### Option 2: Using Terminal (JAR)
 ```bash
 cd HospitalSystem/dist
 java -jar HospitalSystem.jar
-
-ant clean
-ant build
-ant run
 ```
+```bash
+ant clean    # Clean previous builds
+ant build    # Compile the project
+ant run      # Execute the application
+```
+## 👥 Team Members
 
-👥 Team Members
-Meklit Kiros — Lead Architect & Logic Developer
-Mebatsion Yoseph — UI/UX Designer
-HayleMariyam Agergzat — Backend Developer
-Hewan Kifle — QA Tester & Documentation
-Beka Assefa — Version Control & Integration Manager
+| Name | Role |
+|------|------|
+| Meklit Kiros | Lead Architect & Logic Developer |
+| Mebatsion Yoseph | UI/UX Designer |
+| HayleMariyam Agergzat | Backend Developer |
+| Hewan Kifle | QA Tester & Documentation |
+| Beka Assefa | Version Control & Integration Manager |
